@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+- index
+<!-- Session --> 
+ 
+<?php 
+    session_start(); 
+    echo 'Id user saya adalah' .$_SESSION['logged_in_user_Id']; 
+    echo '<br>'; 
+     
+    echo 'Username saya adalah' .$_SESSION['logged_in_user_name']; 
+?>
+
+- buat file lagi bernama session.php dan di beri kode ini
+<?php 
+     
+    session_start(); 
+    $_SESSION['logged_in_user_id'] = '1'; 
+    $_SESSION['logged_in_user_name'] = 'username'; 
+ 
+?>
+</body>
+</html>
